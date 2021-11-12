@@ -1,0 +1,22 @@
+// UTILS
+@import "./utils/tags";
+@import "./utils/classes";
+
+// BASE
+
+@import "./base/var";
+
+// LAYOUT
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/competence";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
+
+// COMPONENTS
+@import "./components/modal";
+@import "./components/modal-form";
