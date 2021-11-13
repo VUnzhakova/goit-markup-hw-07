@@ -16,19 +16,21 @@
   padding-bottom: 200px;
   text-align: center;
   color: var(--two-accent-color);
+
+  &-text {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--two-accent-color);
+    margin-bottom: 30px;
+  }
 }
-.hero-text {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--two-accent-color);
-  margin-bottom: 30px;
-}
+
 .hero-button {
   padding: 10px 32px 10px 32px;
   border-radius: 4px;
@@ -44,8 +46,9 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-button:focus,
-.hero-button:hover {
-  background-color: #188ce8;
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }
