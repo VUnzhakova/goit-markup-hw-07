@@ -1,22 +1,25 @@
-// UTILS
-@import "./utils/tags";
-@import "./utils/classes";
-
 // BASE
 
+@import "./base/tags";
 @import "./base/var";
+
+// COMPONENTS
+
+@import "./components/container";
+@import "./components/modal-form";
+@import "./components/modal";
+@import "./components/section-tilles";
 
 // LAYOUT
 
+@import "./layout/benefits";
+@import "./layout/clients";
+@import "./layout/competence";
+@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/benefits";
-@import "./layout/competence";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/footer";
 @import "./layout/portfolio";
+@import "./layout/team";
 
-// COMPONENTS
-@import "./components/modal";
-@import "./components/modal-form";
+// UTILS
+@import "./utils/visually-hidden";
