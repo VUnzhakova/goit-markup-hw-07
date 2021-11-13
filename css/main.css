@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: Roboto, sans-serif;
 }
@@ -488,11 +487,6 @@ img {
   background-color: #188ce8;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
 .header {
   border-bottom: solid 1px #ececec;
 }
@@ -502,7 +496,12 @@ img {
   align-items: center;
 }
 
-.logo {
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
   margin-right: 93px;
   color: #000000;
   font-family: Raleway, sans-serif;
@@ -512,7 +511,7 @@ img {
   text-decoration: none;
 }
 
-.logo-accent {
+.header-logo__accent {
   color: var(--accent-color);
 }
 
@@ -520,15 +519,15 @@ img {
   display: flex;
 }
 
-.site-nav .item {
+.site-nav__item {
   margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.site-nav__item:last-child {
   margin-right: 0;
 }
 
-.site-nav .menu-link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -543,7 +542,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link.current-link {
+.site-nav__link-current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -555,11 +554,11 @@ img {
   text-decoration: none;
 }
 
-.menu-link {
+.site-nav__link {
   position: relative;
 }
 
-.menu-link.current-link::after {
+.site-nav__link-current::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -570,41 +569,40 @@ img {
   background-color: var(--accent-color);
 }
 
-.site-nav .menu-link:hover,
-.site-nav .menu-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
-/*  Шапка контакты */
-.contact-link {
+.contact-links {
   display: flex;
   margin-left: auto;
   align-content: center;
 }
 
-.contact-link .item {
+.contact-links__item {
   display: flex;
   align-content: center;
 }
 
-.contact-icon {
+.contact-links__icon {
   margin-right: 10px;
   fill: var(--secondary-color);
 }
 
-.contact:focus .contact-icon {
+.contact-links__contact:focus .contact-links__icon {
   fill: var(--accent-color);
 }
 
-.item:hover .contact-icon {
+.contact-links__item:hover .contact-links__icon {
   fill: var(--accent-color);
 }
 
-.contact-link .item + .item {
+.contact-links__item + .contact-links__item {
   margin-left: 50px;
 }
 
-.contact-link .contact {
+.contact-links__contact {
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
@@ -620,14 +618,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link .contact-icon {
+.contact-links__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link .contact:hover,
-.contact-link .contact:focus {
+.contact-links__contact:hover,
+.contact-links__contact:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
