@@ -16,19 +16,19 @@
   padding-bottom: 200px;
   text-align: center;
   color: var(--two-accent-color);
+}
 
-  &-text {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--two-accent-color);
-    margin-bottom: 30px;
-  }
+.hero-text {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--two-accent-color);
+  margin-bottom: 30px;
 }
 
 .hero-button {

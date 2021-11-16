@@ -6,10 +6,10 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
 
-  &__accent {
-    color: var(--accent-color);
-  }
+.header-logo__accent {
+  color: var(--accent-color);
 }
 
 .footer-logo {
@@ -21,8 +21,8 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
 
-  &-accent {
-    color: var(--accent-color);
-  }
+.header-logo-accent {
+  color: var(--accent-color);
 }
